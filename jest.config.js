@@ -7,3 +7,4 @@ export const transform = {
 export const moduleNameMapper = {
     '@/(.*)': '<rootDir>/src/$1'
 };
+export const collectCpverage = true;
