@@ -7,7 +7,7 @@
     "husky:prepare": "husky",
     "test": "jest --passWithNoTests",
     "test:watch": "npx jest --watch",
-    "test:staged" : "npx test --findRelatedTests"
+    "test:staged" : "npm rum test --findRelatedTests"
   },
   "keywords": [],
   "author": "",
