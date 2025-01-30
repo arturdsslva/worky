@@ -1,4 +1,4 @@
-import Person from '.'
+import Person from '@/index'
 
 it('Sould sum', () => {
   const a = 1
