@@ -3,7 +3,7 @@ export interface AppErrorDetail {
   description: string
 }
 
-export class ApplicationError {
+export class AppError {
   process: string
   message: string
   details: AppErrorDetail[]
