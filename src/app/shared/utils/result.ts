@@ -1,16 +1,15 @@
-import { ApplicationError } from '.'
-
+import { AppError } from '@/app/shared/utils/app-error'
 export class Result<T> {
   success: boolean
   data?: T
   code?: number
-  error?: ApplicationError
+  error?: AppError
 
   private constructor(sucesso: boolean) {
     this.success = sucesso
   }
 
-  private addError(error: ApplicationError, code: number): void {
+  private addError(error: AppError, code: number): void {
     this.error = error
     this.code = code
   }
@@ -20,8 +19,8 @@ export class Result<T> {
     this.code = 200
   }
 
-  public static error(code: number, error: ApplicationError): Result<any> {
-    const result = new Result<any>(false)
+  public static error(code: number, error: AppError): Result<unknown> {
+    const result = new Result<unknown>(false)
     result.addError(error, code)
     return result
   }
