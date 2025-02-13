@@ -3,4 +3,3 @@ coverage
 dist
 .env
 .env.test
-readme.md
