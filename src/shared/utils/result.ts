@@ -1,4 +1,5 @@
-import { AppError } from '@/app/shared/utils/app-error'
+import { AppError } from '@/domain/errors/app-error'
+
 export class Result<T> {
   success: boolean
   data?: T
