@@ -1,4 +1,4 @@
-import { Messages } from '@/app/shared/utils'
+import { Messages } from '@/shared/utils'
 import { z } from 'zod'
 
 export const zodError: z.RawCreateParams = {
