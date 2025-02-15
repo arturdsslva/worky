@@ -13,6 +13,7 @@ export enum Messages {
   RATE_LIMIT_EXCEEDED = 'rateLimitExceeded',
   USER_HAS_NO_IMAGE = 'userHasNoImage',
   INVALID_BASE64_FORMAT = 'invalidBase64Format',
+  INVALID_ENVIRONMENT = 'invalidEnvironment',
 
   // /* ------ AUTHENTICATION ------ */
   // INVALID_EMAIL = 'invalidEmail',
