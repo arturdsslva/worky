@@ -1,6 +1,6 @@
 import express from 'express'
 import type { Request, Response } from 'express'
-import { env } from 'config/'
+import { env } from 'config/env'
 
 const app = express()
 
