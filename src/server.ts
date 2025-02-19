@@ -1,10 +1,9 @@
 import express from 'express'
 import type { Request, Response } from 'express'
 import { env } from 'config/'
-import { dataSource } from 'data/datasources/db'
+import { AppDataSource } from '@/data/datasources/ormconfig'
 
-dataSource
-  .initialize()
+AppDataSource.initialize()
   .then(() => {
     console.log('Database connected!')
 
