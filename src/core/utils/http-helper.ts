@@ -1,7 +1,7 @@
 import { Response } from 'express'
 
-import { Messages, Result } from '@/shared/utils'
-import { AppError } from '@/domain/errors/app-error'
+import { Messages, Result } from '@/core/utils'
+import { AppError } from '@/core/errors'
 
 export const ok = (response: Response, result: Result<unknown>) => {
   return response.status(200).json(result)

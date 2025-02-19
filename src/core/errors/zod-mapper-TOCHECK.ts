@@ -1,5 +1,6 @@
 import { ZodError } from 'zod'
-import { AppError, Messages, Result } from '../../shared/utils'
+import { Messages, Result } from '../utils'
+import { AppError } from '@/core/errors'
 
 export const zodErrorMapper = (
   process: string,

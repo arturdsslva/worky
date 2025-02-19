@@ -1,4 +1,4 @@
-import { AppError } from '@/domain/errors/app-error'
+import { AppError } from '@/core/errors'
 
 export class Result<T> {
   success: boolean
