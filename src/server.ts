@@ -1,7 +1,7 @@
 import express from 'express'
 import type { Request, Response } from 'express'
 import { env } from 'config/'
-import { AppDataSource } from '@/data/datasources/ormconfig'
+import { AppDataSource } from '@/data/datasources'
 
 AppDataSource.initialize()
   .then(() => {
