@@ -1,7 +1,7 @@
 import { DataSource } from 'typeorm'
 import { env } from '@/config/env'
 
-export const dataSource: DataSource = new DataSource({
+export const AppDataSource: DataSource = new DataSource({
   type: env.DB_TYPE,
   host: env.DB_HOST,
   port: env.DB_PORT,
