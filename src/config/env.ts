@@ -1,5 +1,6 @@
 import 'dotenv/config'
-import { AppError, Messages } from '@/shared/utils'
+import { Messages } from '@/core/utils'
+import { AppError } from '@/core/errors'
 import { z } from 'zod'
 
 const envSchema = z.object({
