@@ -1,15 +1,25 @@
 import express from 'express'
 import type { Request, Response } from 'express'
-import { env } from 'config/env'
+import { env } from 'config/'
+import { dataSource } from 'data/datasources/db'
 
-const app = express()
+dataSource
+  .initialize()
+  .then(() => {
+    console.log('Database connected!')
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+    const app = express()
 
-const port: number = env.PORT
+    app.get('/', (req: Request, res: Response) => {
+      res.send('Hello World!')
+    })
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`)
-})
+    const port: number = env.PORT
+
+    app.listen(port, () => {
+      console.log(`Server is running at http://localhost:${port}`)
+    })
+  })
+  .catch((error) => {
+    console.log('Database connection error:', error)
+  })
