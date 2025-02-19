@@ -16,6 +16,8 @@
       "@/*": ["*"],
       "config": ["@/config/*"],
       "core": ["@/core/*"],
+      "data": ["@/data/*"],
+      "domain": ["@/domain/*"],
     }
   },
   "exclude": ["node_modules", "dist"]
